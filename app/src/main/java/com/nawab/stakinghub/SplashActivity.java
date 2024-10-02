@@ -10,17 +10,17 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash); // Define this layout below
+        setContentView(R.layout.activity_splash);
 
-        // Use a Handler to delay the transition to the main activity
+        // Handler to delay splash screen for a few seconds (e.g., 3 seconds)
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Start MainActivity after the splash screen
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                // Start WelcomeActivity after the splash screen
+                Intent intent = new Intent(SplashActivity.this, WelcomeActivity.class);
                 startActivity(intent);
-                finish(); // Close SplashActivity so it can't be returned to
+                finish(); // Finish SplashActivity so the user cannot return to it
             }
-        }, 3000); // Duration of the splash screen (3 seconds)
+        }, 3000); // Delay of 3 seconds
     }
 }

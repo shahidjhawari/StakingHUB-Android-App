@@ -8,21 +8,4 @@
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-    <!-- Progress bar (loader) -->
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone" /> <!-- Initially hidden -->
-
-    <!-- TextView for no internet connectivity -->
-    <TextView
-        android:id="@+id/noInternetText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No Internet Connection"
-        android:layout_centerInParent="true"
-        android:visibility="gone" /> <!-- Initially hidden -->
 </RelativeLayout>
